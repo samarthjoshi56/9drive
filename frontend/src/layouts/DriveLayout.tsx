@@ -6,6 +6,7 @@ import {
   FileArchive,
   Gauge,
   History,
+  Brain,
   LogOut,
   Menu,
   Moon,
@@ -43,6 +44,7 @@ const menu = [
   { label: 'Activity Log', icon: History, href: '/activity' },
   { label: 'Setting', icon: Settings, href: '/settings' },
   { label: 'API Keys', icon: Braces, href: '/api' },
+  { label: 'AI Memory', icon: Brain, href: '/memory' },
 ]
 
 type StorageSummary = {

@@ -16,6 +16,7 @@ import { PublicFilePage } from '@/pages/PublicFilePage'
 import { ApiManagementPage } from '@/pages/ApiManagementPage'
 import { TrashPage } from '@/pages/TrashPage'
 import { ActivityLogPage } from '@/pages/ActivityLogPage'
+import { MemoryPage } from '@/pages/MemoryPage'
 import { UploadProvider } from '@/context/UploadContext'
 
 
@@ -42,6 +43,7 @@ function App() {
           <Route path="activity" element={<ActivityLogPage />} />
           <Route path="settings" element={<SettingsPage />} />
           <Route path="api" element={<ApiManagementPage />} />
+          <Route path="memory" element={<MemoryPage />} />
         </Route>
       </Route>
       <Route path="*" element={<Navigate to="/all-files" replace />} />

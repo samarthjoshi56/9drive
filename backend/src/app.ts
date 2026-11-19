@@ -15,6 +15,7 @@ import { apiKeyRouter } from './modules/api-keys/api-key.routes.js'
 import { publicApiRouter } from './modules/public-api/public-api.routes.js'
 import { auditLogRouter } from './modules/audit-logs/audit-log.routes.js'
 import { systemRouter } from './modules/system/system.routes.js'
+import { memoryRouter } from './modules/memory/memory.routes.js'
 
 export const app = express()
 app.set('trust proxy', true)
@@ -36,4 +37,5 @@ app.use('/folders', folderRouter)
 app.use('/invites', inviteRouter)
 app.use('/audit-logs', auditLogRouter)
 app.use('/system', systemRouter)
+app.use('/memory', memoryRouter)
 app.use(errorMiddleware)
