@@ -5,11 +5,12 @@
 - Add local environment-file ignore rules and a frontend environment template.
 - Document the AI-memory design and security boundaries.
 
-## Phase 2 — File inventory and indexing controls
-- Add a user-owned document index table.
-- Add explicit opt-in controls per connected account.
-- Add resumable indexing jobs and progress status.
-- Start with metadata-only inventory; do not download file bodies until indexing is enabled.
+## Phase 2 — File inventory and indexing controls (API foundation implemented)
+- Add persistent per-account opt-in settings.
+- Add account listing with metadata file counts and opt-in state.
+- Add metadata inventory API restricted to accounts with indexing enabled.
+- No file contents are downloaded or sent to an AI service in this phase.
+- Resumable jobs and progress tracking remain future work.
 
 ## Phase 3 — Text extraction
 - Add bounded, streaming downloads for supported file types.
